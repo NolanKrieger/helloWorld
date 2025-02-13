@@ -21,6 +21,9 @@ public class calculator{
         if(choice.equals("multiplication")){
             System.out.println(first * second);
         }else if(choice.equals("division")){
+            if(second == 0){
+                System.out.println("ERROR: division by 0");
+            }
             System.out.println(first / second);
         }
     }
